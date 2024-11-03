@@ -1,0 +1,300 @@
+body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", Arial, sans-serif;
+    background-color: #1e1f26; /* Dark background for a stage-like feel */
+    color: #f5f5f5;
+}
+
+#footer {
+    height: 30px;
+    vertical-align: middle;
+    text-align: right;
+    clear: both;
+    padding-right: 3px;
+    background-color: #343a40;
+    margin-top: 2px;
+    width: 790px;
+}
+
+#footer form {
+    margin: 0px;
+    margin-top: 2px;
+}
+
+#dhtmlgoodies_dragDropContainer {
+    width: 790px;
+    height: 770px;
+    border: 2px solid #ffd700; /* Gold border for a premium feel */
+    background-color: #222831; /* Dark container background */
+    -moz-user-select: none;
+    padding: 10px;
+}
+
+#dhtmlgoodies_dragDropContainer ul {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding: 2px;
+}
+
+#dhtmlgoodies_dragDropContainer li,
+#dragContent li,
+li#indicateDestination {
+    list-style-type: none;
+    height: 15px;
+    background-color: #ffd700; /* Gold background for drag items */
+    border: 1px solid #000;
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1e1f26; /* Dark text for contrast */
+    line-height: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+li#indicateDestination {
+    border: 1px dotted #ffd700;
+    background-color: #1e1f26;
+}
+
+#dhtmlgoodies_dragDropContainer ul li.correctAnswer {
+    background-color: #4caf50; /* Green for correct */
+    color: #fff;
+}
+
+#dhtmlgoodies_dragDropContainer ul li.wrongAnswer {
+    background-color: #f44336; /* Red for wrong */
+    color: #fff;
+}
+
+/* LEFT COLUMN CSS */
+div#dhtmlgoodies_listOfItems {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 180px;
+    width/* */:/**/160px;
+    width: /**/160px;
+}
+
+
+
+div#dhtmlgoodies_listOfItems div {
+    border: 1px solid #ffd700;
+    background-color: #343a40;
+    border-radius: 8px;
+}
+
+div#dhtmlgoodies_listOfItems div p {
+    margin: 0px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #343a40;
+    color: #ffd700;
+    text-align: center;
+}
+
+/* END LEFT COLUMN CSS */
+
+#dhtmlgoodies_dragDropContainer .mouseover {
+    background-color: #393e46;
+    border: 1px solid #ffd700;
+}
+
+/* Start main container CSS */
+div#dhtmlgoodies_mainContainer {
+    width: 590px;
+    float: left;
+}
+
+#dhtmlgoodies_mainContainer div {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffd700;
+    background-color: #343a40;
+    border-radius: 8px;
+    width: 172px;
+    width/* */:/**/170px;
+    width: /**/170px;
+}
+
+
+#dhtmlgoodies_mainContainer div p {
+    margin: 0px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #222831;
+    color: #ffd700;
+    text-align: center;
+}
+
+#dhtmlgoodies_mainContainer ul {
+    width: 152px;
+    height: 96px;
+    border: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    background-color: #222831;
+    border-radius: 5px;
+}
+
+#dragContent {
+    position: absolute;
+    width: 150px;
+    height: 15px;
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    z-index: 2000;
+}
+
+#dragDropIndicator {
+    position: absolute;
+    width: 7px;
+    height: 10px;
+    display: none;
+    z-index: 1000;
+    margin: 0px;
+    padding: 0px;
+}
+
+.style1 {
+    color: #ffd700; /* Updated to match music theme */
+}
+
+		padding:2px;
+	}
+	
+	#dhtmlgoodies_dragDropContainer li,#dragContent li,li#indicateDestination{	/* Movable items, i.e. <LI> */
+		list-style-type:none;
+		height:15px;
+		background-color:#FFFF99;
+		border:1px solid #000;
+		padding:2px;
+		margin-bottom:2px;
+		cursor:pointer;
+		font-size:13px;
+		line-height:15px;
+	}
+
+	li#indicateDestination{	/* Box indicating where content will be dropped - i.e. the one you use if you don't use arrow */
+		border:1px dotted #600;	
+		background-color:#FFF;
+	}
+		
+	#dhtmlgoodies_dragDropContainer ul li.correctAnswer{	/* Correctly moved item */
+		background-color:green;
+		color:#FFF;
+	}
+	#dhtmlgoodies_dragDropContainer ul li.wrongAnswer{	/* Item moved to wrong box */
+		background-color:red;
+		color:#FFF;
+	}
+	
+	
+	/* LEFT COLUMN CSS */
+	div#dhtmlgoodies_listOfItems{	/* Left column "Available students" */
+		
+		float:left;
+		padding-left:10px;
+		padding-right:10px;
+		
+		/* CSS HACK */
+		width: 180px;	/* IE 5.x */
+		width/* */:/**/160px;	/* Other browsers */
+		width: /**/160px;
+				
+	}
+	#dhtmlgoodies_listOfItems ul{	/* Left(Sources) column <ul> */
+		height:560px;	
+
+	}
+		
+	div#dhtmlgoodies_listOfItems div{
+		border:1px solid #999;		
+	}
+	div#dhtmlgoodies_listOfItems div ul{	/* Left column <ul> */
+		margin-left:10px;	/* Space at the left of list - the arrow will be positioned there */
+	}
+	#dhtmlgoodies_listOfItems div p{	/* Heading above left column */
+		margin:0px;	
+		font-weight:bold;
+		padding-left:12px;
+		background-color:#317082;	
+		color:#FFF;
+		margin-bottom:5px;
+	}
+	/* END LEFT COLUMN CSS */
+	
+	#dhtmlgoodies_dragDropContainer .mouseover{	/* Mouse over effect DIV box in right column */
+		background-color:#E2EBED;
+		border:1px solid #317082;
+	}
+	
+	/* Start main container CSS */
+	
+	div#dhtmlgoodies_mainContainer{	/* Right column DIV */
+		width:590px;
+		float:left;	
+	}
+	#dhtmlgoodies_mainContainer div{	/* Parent <div> of small boxes */
+		float:left;
+		margin-right:10px;
+		margin-bottom:10px;
+		margin-top:0px;
+		border:1px solid #999;
+
+		/* CSS HACK */
+		width: 172px;	/* IE 5.x */
+		width/* */:/**/170px;	/* Other browsers */
+		width: /**/170px;
+				
+	}
+	#dhtmlgoodies_mainContainer div ul{
+		margin-left:10px;
+	}
+	
+	#dhtmlgoodies_mainContainer div p{	/* Heading above small boxes */
+		margin:0px;
+		padding:0px;
+		padding-left:12px;
+		font-weight:bold;
+		background-color:#317082;	
+		color:#FFF;	
+		margin-bottom:5px;
+	}
+	
+	#dhtmlgoodies_mainContainer ul{	/* Small box in right column ,i.e <ul> */
+		width:152px;
+		height:80px;	
+		border:0px;	
+		margin-bottom:0px;
+		overflow:hidden;
+		
+	}
+	
+	#dragContent{	/* Drag container */
+		position:absolute;
+		width:150px;
+		height:15px;
+		display:none;
+		margin:0px;
+		padding:0px;
+		z-index:2000;
+	}
+
+	#dragDropIndicator{	/* DIV for the small arrow */
+		position:absolute;
+		width:7px;
+		height:10px;
+		display:none;
+		z-index:1000;
+		margin:0px;
+		padding:0px;
+	}
+	.style1 {color: #FF0000}
+
+	
